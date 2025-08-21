@@ -9,6 +9,9 @@
         "laravel-vite-plugin": "^0.7.2",
         "lodash": "^4.17.19",
         "postcss": "^8.1.14",
+        "serverless-plugin-log-retention": "^2.1.0",
+        "serverless-prune-plugin": "^2.1.0",
+        "serverless-s3-sync": "^3.4.0",
         "vite": "^4.0.0"
     }
 }
