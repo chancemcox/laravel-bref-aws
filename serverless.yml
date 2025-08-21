@@ -1,4 +1,4 @@
-service: laravel-test-aws
+service: laravel-test
 
 provider:
   name: aws
@@ -195,10 +195,10 @@ resources:
               ErrorCachingMinTTL: 0
             - ErrorCode: 504
               ErrorCachingMinTTL: 0
-          # ViewerCertificate:
-          #   AcmCertificateArn: arn:aws:acm:us-east-1:012959706571:certificate/d16074e9-1dc5-420a-a51f-8a5347995ba1
-          #   SslSupportMethod: sni-only
-          #   MinimumProtocolVersion: TLSv1.2_2019
+          ViewerCertificate:
+            AcmCertificateArn: arn:aws:acm:us-east-1:012959706571:certificate/d16074e9-1dc5-420a-a51f-8a5347995ba1
+            SslSupportMethod: sni-only
+            MinimumProtocolVersion: TLSv1.2_2019
     MyActionQueue:
       Type: AWS::SQS::Queue
       Properties:
